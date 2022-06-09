@@ -13,8 +13,8 @@ public class StringQueue implements IQueue {
     private List<String> elements = new ArrayList<String>();
     private int maxSize;
 
-    public StringQueue(int maxsize) {
-        this.maxSize = maxSize;
+    public StringQueue(int size) {
+        this.maxSize = size;
     }
 
     @Override
@@ -59,7 +59,6 @@ public class StringQueue implements IQueue {
         return element;
     }
 
-
     @Override
     public String element() {
         String element = peek();
@@ -68,5 +67,4 @@ public class StringQueue implements IQueue {
 
         return element;
     }
-
 }

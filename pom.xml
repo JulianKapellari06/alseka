@@ -32,6 +32,17 @@
             </roles>
             <timezone>Europe/Vienna</timezone>
         </developer>
+        <developer>
+            <id>marinsekic</id>
+            <name>Sekic Marin</name>
+            <email>marin.sekic@edu.fh-joanneum.at</email>
+            <organization>FH JOANNEUM GmbH</organization>
+            <organizationUrl>https://www.fh-joanneum.at/iit</organizationUrl>
+            <roles>
+                <role>Student</role>
+            </roles>
+            <timezone>Europe/Vienna</timezone>
+        </developer>
     </developers>
 
     <build>

@@ -1,3 +1,4 @@
+package at.fhj.msd;
 
 // fastly written (not really nice) comments but good enough to understand
 public interface IQueue {
@@ -12,7 +13,7 @@ public interface IQueue {
   public abstract String poll();
 
   /* 
-  like poll but if no elment exists NoSuchElementException is throwin instead of null return value
+  like poll but if no element exists NoSuchElementException is throw in instead of null return value
    */
   public abstract String remove();
 

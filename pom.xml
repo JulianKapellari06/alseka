@@ -19,6 +19,7 @@
                 <role>Student</role>
             </roles>
             <timezone>Europe/Vienna</timezone>
+            <url>https://github.com/JulianKapellari06/alseka.git</url>
         </developer>
     </developers>
 

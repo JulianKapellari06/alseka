@@ -126,4 +126,46 @@
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
+    <reporting>
+        <plugins>
+            <!--  maven site for documentation  -->
+            <plugin>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>3.0.0</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.7.1</version>
+            </plugin>
+            <!--  Java Doc within Maven Site Documentation -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <javadocExecutable>${java.home}/bin/javadoc</javadocExecutable>
+                    <doclint>-html,-syntax,-accessibility,-missing</doclint>
+                    <failOnError>false</failOnError>
+                    <quiet>true</quiet>
+                </configuration>
+            </plugin>
+            <!--  Test Coverage from JaCoCo Plugin integration in Maven Site Documentation  -->
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.8.6</version>
+                <configuration>
+                    <dataFile>${jacoco.execution.data.file}</dataFile>
+                </configuration>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <report>report</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+        </plugins>
+    </reporting>
 </project>

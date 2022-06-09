@@ -1,0 +1,14 @@
+<project name="Alseka">
+    <publishDate position="right"/>
+    <version position="left"/>
+    <body>
+        <menu name="Overview">
+            <item name="Kapellari" href="Kapellari.html"/>
+            <item name="Alamer" href="Alamer.html"/>
+            <item name="Sekic" href="Sekic.html"/>
+        </menu>
+        <menu ref="reports"/>
+        <menu ref="parent"/>
+        <menu ref="modules"/>
+    </body>
+</project>

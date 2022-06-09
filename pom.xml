@@ -21,6 +21,17 @@
             <timezone>Europe/Vienna</timezone>
             <url>https://github.com/JulianKapellari06/alseka.git</url>
         </developer>
+        <developer>
+            <id>mohammedalamer</id>
+            <name>Alamer Mohammed</name>
+            <email>mohammed.alamer@edu.fh-joanneum.at</email>
+            <organization>FH JOANNEUM GmbH</organization>
+            <organizationUrl>https://www.fh-joanneum.at/iit</organizationUrl>
+            <roles>
+                <role>Student</role>
+            </roles>
+            <timezone>Europe/Vienna</timezone>
+        </developer>
     </developers>
 
     <build>

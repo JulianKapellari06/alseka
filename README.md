@@ -6,8 +6,8 @@
 - [x] Pom xml add libraries - Julian Kapellari
 - [ ]  Correct the errors in StringQueue - Julian Kapellari
 - [ ]  Integrate the Drinks class and add an implementation class - 
-- [ ]  Add Methods to class - 
-- [ ]  Create JavaDoc -
+- [x]  Add Methods to class - Julian Kapellari, Marin Sekic, Mohammed Alamer 
+- [x]  Create JavaDoc - Mohammed Alamer
 - [ ]  Create JUnit Tests -
 - [ ]  Create DoubleQueue -
 - [ ]  Create maven site -

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DrinksQueue implements IQueue{
-    private List<String> elements = new ArrayList<String>();
+    private List<Drink> elements = new ArrayList();
     private int maxSize;
 
     public DrinksQueue(int maxSize){
@@ -12,27 +12,39 @@ public class DrinksQueue implements IQueue{
     }
 
     @Override
-    public boolean offer(String obj) {
-        return false;
+    public boolean offer(Object obj) {
+        if (elements.size() != maxSize)
+            elements.add((SimpleDrink) obj);
+        else
+            return false;
+
+        return true;
     }
 
     @Override
-    public String poll() {
+    public Object poll() {
+        Object element = peek();
+
+        if (element != null) {
+            elements.remove(element);
+            return element;
+        } else {
+            return null;
+        }
+    }
+
+    @Override
+    public Object remove() {
         return null;
     }
 
     @Override
-    public String remove() {
+    public Object peek() {
         return null;
     }
 
     @Override
-    public String peek() {
-        return null;
-    }
-
-    @Override
-    public String element() {
+    public Object element() {
         return null;
     }
 }

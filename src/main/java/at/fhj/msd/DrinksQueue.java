@@ -2,10 +2,11 @@ package at.fhj.msd;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 public class DrinksQueue implements IQueue{
     private List<Drink> elements = new ArrayList();
-    private int maxSize;
+    private final int maxSize;
 
     public DrinksQueue(int maxSize){
         this.maxSize = maxSize;
@@ -35,7 +36,11 @@ public class DrinksQueue implements IQueue{
 
     @Override
     public Object remove() {
-        return null;
+        Object element = peek();
+        if (element == null)
+            throw new NoSuchElementException("there's no element any more");
+        elements.remove((SimpleDrink) element);
+        return element;
     }
 
     @Override

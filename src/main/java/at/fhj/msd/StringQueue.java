@@ -19,8 +19,8 @@ public class StringQueue implements IQueue {
 /**
  * StringQueue(int maxSize): constructor of the Drink menu
  */
-    public StringQueue(int maxsize) {
-        this.maxSize = maxSize;
+    public StringQueue(int size) {
+        this.maxSize = size;
     }
 
     /**
@@ -86,7 +86,7 @@ public class StringQueue implements IQueue {
 
         return element;
     }
-
+    
     /**
      * gets the first string in the list
      * @return NoSuchElementException if there is no Strings in the list, the first String as element if there is any String
@@ -100,5 +100,4 @@ public class StringQueue implements IQueue {
 
         return element;
     }
-
 }

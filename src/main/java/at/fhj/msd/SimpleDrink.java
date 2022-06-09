@@ -51,4 +51,12 @@ public class SimpleDrink extends Drink{
         }
         return false;
     }
+
+    @Override
+    public String toString() {
+        return "SimpleDrink{" +
+                "name='" + name + '\'' +
+                ", l=" + l +
+                '}';
+    }
 }

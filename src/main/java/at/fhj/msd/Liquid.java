@@ -84,4 +84,13 @@ public class Liquid{
     public void setAlcoholPercent(double alcoholPercent) {
         this.alcoholPercent = alcoholPercent;
     }
+
+    @Override
+    public String toString() {
+        return "Liquid{" +
+                "name='" + name + '\'' +
+                ", volume=" + volume +
+                ", alcoholPercent=" + alcoholPercent +
+                '}';
+    }
 }

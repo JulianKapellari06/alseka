@@ -45,11 +45,22 @@ public class DrinksQueue implements IQueue{
 
     @Override
     public Object peek() {
-        return null;
+        Object element;
+        if (elements.size() > 0)
+            element = elements.get(0);
+        else
+            element = null;
+
+        return element;
     }
+
 
     @Override
     public Object element() {
-        return null;
+        Object element = peek();
+        if (element == null)
+            throw new NoSuchElementException("there's no element any more");
+
+        return element;
     }
 }

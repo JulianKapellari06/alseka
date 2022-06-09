@@ -12,5 +12,6 @@ public class Test {
         System.out.println(queue.offer(new SimpleDrink("sbkjd3", liquid)));
 
         System.out.println(queue.poll());
+
     }
 }
